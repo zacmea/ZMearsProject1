@@ -1,5 +1,4 @@
-NOT DONE. NOT DONE. NOT DONE. NOT DONE.
-
+THIS PAGE WILL CONTINUE TO BE UPDATED AS THE PROJECT PROGRESSES.
 <div id="top"></div>
 <!--
 *** Thanks for checking out the Best-README-Template. If you have a suggestion
@@ -28,12 +27,12 @@ NOT DONE. NOT DONE. NOT DONE. NOT DONE.
 
 
 
-<!-- PROJECT LOGO -->
+<!-- PROJECT LOGO
 <br />
 <div align="center">
   <a href="https://github.com/zacmea/ZMearsProject1">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
+  </a>  -->
 
 <h3 align="center">Terrific Trivia</h3>
 
@@ -59,7 +58,6 @@ NOT DONE. NOT DONE. NOT DONE. NOT DONE.
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -76,7 +74,7 @@ NOT DONE. NOT DONE. NOT DONE. NOT DONE.
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+This is me building my first project for GA's coding bootcamp.  It will be a clickable trivia game.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -84,14 +82,9 @@ NOT DONE. NOT DONE. NOT DONE. NOT DONE.
 
 ### Built With
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+<li>HTML</li>
+<li>JAVASCRIPT</li>
+<li>CSS</li>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -100,55 +93,41 @@ NOT DONE. NOT DONE. NOT DONE. NOT DONE.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/zacmea/ZMearsProject1.git
    ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+2. Open the repo in VS Code or the editor of your choice.
+3. Click "go live" to open the site in your browser.
 
+### Prerequisites
+
+1. Internet access
+2. VS code or other code editor
+
+### Installation
+
+n/a
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Examples will be added as the project is further developed.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+<!--_For more examples, please refer to the [Documentation](https://example.com)_ -->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
-<!-- ROADMAP -->
+  
 ## Roadmap
-
+<!--
 - [ ] Feature 1
 - [ ] Feature 2
 - [ ] Feature 3
-    - [ ] Nested Feature
+    - [ ] Nested Feature -->
 
 See the [open issues](https://github.com/zacmea/ZMearsProject1/issues) for a full list of proposed features (and known issues).
 
@@ -186,9 +165,10 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Zachary Kyler Mears: zach.mears@gmail.com
-
-Project Link: [https://github.com/zacmea/ZMearsProject1](https://github.com/zacmea/ZMearsProject1)
+Zachary Kyler Mears:
+<li>email: zach.mears@gmail.com</li>
+<li>LinkedIn Profile: www.linkedin.com/zacharykyler</li>
+<li>Project Link: https://github.com/zacmea/ZMearsProject1</li>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
