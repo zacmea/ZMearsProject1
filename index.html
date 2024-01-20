@@ -5,20 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <h1>Welcome to Zachary's Trivia Extravaganza!</h1>
     <h3>Questions correct: <span id="questionsCorrectText">0</span></h3>
-    <h3>Lives remaining: <span id="livesRemainingText">0</span></h3>
+    <h3>Lives remaining: <span id="livesRemainingText">3</span></h3>
 
-    <div class="container_questionBox">
+    <!-- Could put a message box here or below ? to share trivia tidbit, wrong/right, hints, etc instead of modal/other pop-up-->
+
+    <div class="container">
+        <div id="questionBox">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, corporis ex totam excepturi veniam officia odit, exercitationem placeat facilis architecto fugiat ratione nihil eos et earum doloribus modi vitae incidunt.
+        </div>
         <br>
-        <button id="aButton">A</button>
-        <button id="bButton">B</button>
-        <button id="cButton">C</button>
-        <button id="dButton">D</button>
+        <button id="aButton">A <span id="aOption"></span></button>
+        <button id="bButton">B <span id="bOption"></span></button>
+        <button id="cButton">C <span id="cOption"></span></button>
+        <button id="dButton">D <span id="dOption"></span></button>
+    </div>
+    <div id="tidbitBox" class="container">
+        
+
     </div>
 
     

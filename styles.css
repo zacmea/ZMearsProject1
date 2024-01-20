@@ -7,14 +7,23 @@ button {
     font-size: x-large;
     padding: 5px 10px;
     margin: 5px;
+    display: block;
 ;
 
 }
 
-.container_questionBox{
-    border: dotted green;
+.container {
+    border: thick dashed green;
     border-radius: 10px;
     width: 50%;
     padding: 10px;
     margin: auto;
+    font-size: 22px;
+}
+
+#questionBox {
+    font-weight: 800;
+}
+#tidbitBox {
+    border: thick dotted darkorange;
 }
