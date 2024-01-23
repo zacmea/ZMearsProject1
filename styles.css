@@ -3,13 +3,30 @@ span {
     color: rgb(151, 2, 2);
 }
 
-button {
+.answerButton{
     font-size: x-large;
-    padding: 5px 10px;
-    margin: 5px;
+    padding: 2px 10px;
+    margin: 8px;
     display: block;
-;
+    background-color: beige;
+}
 
+#lowerNav>button{
+    font-size: large;
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: rgb(164, 251, 251);
+    font-weight: 900;
+}
+
+#lowerNav{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    /* display: inline-flex; */
+    margin: 0 auto;
+    width: 50%;
+    justify-content: space-evenly;
 }
 
 .container {
@@ -17,13 +34,38 @@ button {
     border-radius: 10px;
     width: 50%;
     padding: 10px;
-    margin: auto;
+    margin: 5px auto;
     font-size: 22px;
 }
 
-#questionBox {
+#feedbackBox{
+    display: flex;
+    justify-content: center;
+}
+
+.questionBox {
+       border: thick dashed green;
+        border-radius: 10px;
+        width: 50%;
+        padding: 10px;
+        margin: 5px auto;
+        font-size: 22px;
+}
+
+#questionText{
+    display: flex;
+    justify-content: center;    
+    /* padding: 300 auto; */
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width:100%;
     font-weight: 800;
 }
+    /* padding-bottom: 20px;
+    padding-left: auto;
+    padding-right: auto; */
+
+
 #tidbitBox {
     border: thick dotted darkorange;
 }

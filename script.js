@@ -2,19 +2,30 @@
 let questionBank = [];
 let currentQuestionCounter = 0;
 let userAnswer;
-let correctAnswer;
-//-----Text updating/outputting variables:-----
-let qBox = document.getElementById("questionBox");
+let correctCounter = 0;
+let livesRemaining = 3;
+let gameRunning = true;
+let i = 0;
+
+//-----Text updating/outputting field variables:-----
+let qBox = document.getElementById("questionText");
 let aBox = document.getElementById("aOption");
 let bBox = document.getElementById("bOption");
 let cBox = document.getElementById("cOption");
 let dBox = document.getElementById("dOption");
 let tbBox = document.getElementById("tidbitBox");
+let correctBox = document.getElementById("questionsCorrectText");
+let livesBox = document.getElementById("livesRemainingText");
+let feedbackBox = document.getElementById("feedbackBox");
+
 //-----Button variables:-----
-let aButton = document.getElementById("aButton");
+let aButton = document.getElementById("aButton"); 
 let bButton = document.getElementById("bButton");
 let cButton = document.getElementById("cButton");
 let dButton = document.getElementById("dButton");
+let nextButton = document.getElementById("next");
+let exitButton = document.getElementById("exit");
+let restartButton = document.getElementById("restart");
 
 //-----Creating tivia question bank via class + objects-----
 class TriviaQuestion {
@@ -35,7 +46,7 @@ const question1 = new TriviaQuestion(
     "100,000",
     "10,000,000",
     "1",
-    "The 'solar system' refers only to our star (called 'sun') and the celestial bodies that orbit it (planets, asteroids, etc)."
+    "Just one!  The 'solar system' refers only to our star (called 'sun') and the celestial bodies that orbit it (planets, asteroids, etc)."
 );
 questionBank.push(question1);
 const question2 = new TriviaQuestion(
@@ -89,39 +100,77 @@ const question6 = new TriviaQuestion(
 );
 questionBank.push(question6);
 
-console.log(questionBank);
+
+
 //-----Gameplay functions-----
-function nextQuestion() {
-    for (i = 0; i < questionBank.length; i++) {
+function playGame() {
+    // while (gameRunning) {
+    function updateFields() {
+        correctBox.innerText = correctCounter;
+        livesBox.innerText = livesRemaining;
+        feedbackBox.style.border = "none";
+        tbBox.style.border = "none";
+        feedbackBox.innerText = "";
+        tbBox.innerText = ""
         qBox.innerHTML = questionBank[i].question;
         aBox.innerText = questionBank[i].ansA;
         bBox.innerText = questionBank[i].ansB;
         cBox.innerText = questionBank[i].ansC;
         dBox.innerText = questionBank[i].ansD;
-        tbBox.innerText = questionBank[i].tidbit;
-}
-        
-        aButton.addEventListener("click", userAnswers);
-        bButton.addEventListener("click", userAnswers);
-        cButton.addEventListener("click", userAnswers);
-        dButton.addEventListener("click", userAnswers);
-        
-        function userAnswers(event) {
-            userSelection = event.target;
-            console.log(userSelection);
-            compareAnswer(userSelection);
+        if (correctCounter == 5){
+            alert("you win!");
+            i=0;
+            return;
         }
-        function compareAnswer(userAnswer) {
-            if (userSelection == questionBank[i].correctAns) {
-                alert("Correct!");
-            } else {
-                alert("Oops! Wrong");
-            }
+        if (livesRemaining == 0){
+            alert("you lose!");
+            i=0
+            return;
         }
-        //compare user input to correct answer
-        //score right or wrong (if/else statments)
-        //Tell user right or wrong & display tidbit
     }
+    updateFields();
 
+    aButton.addEventListener("click", selectAndCompare);
+    bButton.addEventListener("click", selectAndCompare);
+    cButton.addEventListener("click", selectAndCompare);
+    dButton.addEventListener("click", selectAndCompare);
+    // exitButton.addEventListener("click", exitScreen);
+    // restartButton.addEventListener("click", restartGame);
 
-nextQuestion();
+    // function userSelects(event) {
+    //     // userSelection = event.currentTarget;
+    //     console.log(userSelection);
+    //     // gameRunning = userSelection;
+    //     console.log(event.currentTarget);
+    //     compareAnswer(userSelection);
+    // }
+aButton.remo
+    
+    function selectAndCompare(event) {
+        // console.log();
+        // console.log(userSelection.children[0]);
+        // console.log(questionBank[i].correctAns);
+        userSelection = event.currentTarget;
+        event.currentTarget.style.backgroundColor = "blue";
+        event.currentTarget.style.color = "white";
+        if (userSelection.children[0].innerText == questionBank[i].correctAns) {
+            feedbackBox.innerText = "¡Respuesta correcta!"
+            tbBox.innerText = questionBank[i].tidbit;
+            tbBox.style.border = "dotted orange";
+            correctCounter++;
+            nextButton.addEventListener("click", advanceQuestion);
+        } else {
+            feedbackBox.innerText = "Respuesta equivocada :-("
+            tbBox.innerText = questionBank[i].tidbit;
+            tbBox.style.border = "dotted orange";
+            livesRemaining--;
+            nextButton.addEventListener("click", advanceQuestion);
+        }
+    }
+    function advanceQuestion() {
+        i++;
+        updateFields();
+    }
+}
+
+playGame();
