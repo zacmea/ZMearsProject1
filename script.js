@@ -19,7 +19,7 @@ let livesBox = document.getElementById("livesRemainingText");
 let feedbackBox = document.getElementById("feedbackBox");
 
 //-----Button variables:-----
-let aButton = document.getElementById("aButton"); 
+let aButton = document.getElementById("aButton");
 let bButton = document.getElementById("bButton");
 let cButton = document.getElementById("cButton");
 let dButton = document.getElementById("dButton");
@@ -100,8 +100,6 @@ const question6 = new TriviaQuestion(
 );
 questionBank.push(question6);
 
-
-
 //-----Gameplay functions-----
 function playGame() {
     // while (gameRunning) {
@@ -111,20 +109,26 @@ function playGame() {
         feedbackBox.style.border = "none";
         tbBox.style.border = "none";
         feedbackBox.innerText = "";
-        tbBox.innerText = ""
+        tbBox.innerText = "";
         qBox.innerHTML = questionBank[i].question;
         aBox.innerText = questionBank[i].ansA;
         bBox.innerText = questionBank[i].ansB;
         cBox.innerText = questionBank[i].ansC;
         dBox.innerText = questionBank[i].ansD;
-        if (correctCounter == 5){
+        let answerButtonsAll = document.getElementsByClassName("answerButton");
+        for (let button of answerButtonsAll) {
+            button.style.backgroundColor = "beige";
+            button.style.color = "black";
+            button.children[0].style.color = "rgb(151, 2, 2)";
+        }
+        if (correctCounter == 5) {
             alert("you win!");
-            i=0;
+
             return;
         }
-        if (livesRemaining == 0){
+        if (livesRemaining == 0) {
             alert("you lose!");
-            i=0
+
             return;
         }
     }
@@ -135,8 +139,20 @@ function playGame() {
     cButton.addEventListener("click", selectAndCompare);
     dButton.addEventListener("click", selectAndCompare);
     // exitButton.addEventListener("click", exitScreen);
-    // restartButton.addEventListener("click", restartGame);
+    restartButton.addEventListener("click", restartGame);
 
+    function restartGame() {
+        correctCounter = 0;
+        livesRemaining = 3;
+        gameRunning = true;
+        i = 0;
+        updateFields();
+        let answerButtonsAll = document.getElementsByClassName("answerButton");
+        // for (let button of answerButtonsAll) {
+        //     button.style.backgroundColor = "beige";
+        //     // button.innerHTML.style.color = "rgb(151, 2, 2)";
+        // }
+    }
     // function userSelects(event) {
     //     // userSelection = event.currentTarget;
     //     console.log(userSelection);
@@ -144,8 +160,7 @@ function playGame() {
     //     console.log(event.currentTarget);
     //     compareAnswer(userSelection);
     // }
-aButton.remo
-    
+
     function selectAndCompare(event) {
         // console.log();
         // console.log(userSelection.children[0]);
@@ -153,14 +168,15 @@ aButton.remo
         userSelection = event.currentTarget;
         event.currentTarget.style.backgroundColor = "blue";
         event.currentTarget.style.color = "white";
+        event.currentTarget.children[0].style.color = "white";
         if (userSelection.children[0].innerText == questionBank[i].correctAns) {
-            feedbackBox.innerText = "¡Respuesta correcta!"
+            feedbackBox.innerText = "¡Respuesta correcta!";
             tbBox.innerText = questionBank[i].tidbit;
             tbBox.style.border = "dotted orange";
             correctCounter++;
             nextButton.addEventListener("click", advanceQuestion);
         } else {
-            feedbackBox.innerText = "Respuesta equivocada :-("
+            feedbackBox.innerText = "Respuesta equivocada :-(";
             tbBox.innerText = questionBank[i].tidbit;
             tbBox.style.border = "dotted orange";
             livesRemaining--;
