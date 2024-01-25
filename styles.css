@@ -11,6 +11,14 @@ span {
     background-color: beige;
 }
 
+button {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+}
+
+.inactive{
+    display: none;
+}
+
 #lowerNav>button{
     font-size: large;
     margin: 0 5px;
@@ -29,18 +37,19 @@ span {
     justify-content: space-evenly;
 }
 
-.container {
+/* .container {
     border: thick dashed green;
     border-radius: 10px;
     width: 50%;
     padding: 10px;
     margin: 5px auto;
     font-size: 22px;
-}
+} */
 
 #feedbackBox{
     display: flex;
     justify-content: center;
+    font-size: 26px;
 }
 
 .questionBox {
@@ -67,5 +76,10 @@ span {
 
 
 #tidbitBox {
-    border: thick dotted darkorange;
+    display: flex;
+    font-size: 22px;
+    width: 60%;
+    margin: 5px auto;
+    padding: 8px;
+    border-radius: 10px;
 }
