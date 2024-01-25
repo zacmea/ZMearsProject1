@@ -88,6 +88,11 @@ This is me building my first project for GA's coding bootcamp.  It will be a cli
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+## Goals for MVP
+1. Clickable trivia game hosted on GH pages
+2. Scoring system so user can win or lose
+3. Question bank coming from wide variety of sources
+4. 
 
 
 <!-- GETTING STARTED -->
