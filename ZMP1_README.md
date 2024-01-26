@@ -39,6 +39,7 @@ THIS PAGE WILL CONTINUE TO BE UPDATED AS THE PROJECT PROGRESSES.
   <p align="center">
         This is me building my first project for GA's coding bootcamp.  It will be a clickable trivia game.  The build-flow & proposal information can be found at the bottom of this readme.
     <br />
+    <a href="https://zacmea.github.io/ZMearsProject1/">link to live project</a>
   </p>
 </div>
 
@@ -66,6 +67,7 @@ THIS PAGE WILL CONTINUE TO BE UPDATED AS THE PROJECT PROGRESSES.
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#build-flow-and-proposal">My build-flow and proposal</a></li>
   </ol>
 </details>
 
@@ -78,21 +80,13 @@ This is me building my first project for GA's coding bootcamp.  It will be a cli
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
-### Built With
+## Built With
 
 <li>HTML</li>
 <li>JAVASCRIPT</li>
 <li>CSS</li>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-## Goals for MVP
-1. Clickable trivia game hosted on GH pages
-2. Scoring system so user can win or lose
-3. Question bank coming from wide variety of sources
-4. 
 
 
 <!-- GETTING STARTED -->
@@ -110,9 +104,6 @@ This is me building my first project for GA's coding bootcamp.  It will be a cli
 1. Internet access
 2. VS code or other code editor
 
-### Installation
-
-n/a
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- USAGE EXAMPLES -->
@@ -123,9 +114,6 @@ Examples will be added as the project is further developed.
 <!--_For more examples, please refer to the [Documentation](https://example.com)_ -->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
   
 ## Roadmap
 <!--
@@ -134,9 +122,9 @@ Examples will be added as the project is further developed.
 - [ ] Feature 3
     - [ ] Nested Feature -->
 
-See the [open issues](https://github.com/zacmea/ZMearsProject1/issues) for a full list of proposed features (and known issues).
+<!--See the [open issues](https://github.com/zacmea/ZMearsProject1/issues) for a full list of proposed features (and known issues).
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">back to top</a>)</p> -->
 
 
 
@@ -156,8 +144,6 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
 <!-- LICENSE -->
 ## License
 
@@ -166,15 +152,13 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-
 <!-- CONTACT -->
 ## Contact
 
 Zachary Kyler Mears:
 <li>email: zach.mears@gmail.com</li>
-<li>LinkedIn Profile: www.linkedin.com/zacharykyler</li>
-<li>Project Link: https://github.com/zacmea/ZMearsProject1</li>
-
+<li><a href="www.linkedin.com/zacharykyler">LinkedIn</a></li>
+<li><a href="https://github.com/zacmea/ZMearsProject1">Direct link to this project repo</a></li>
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
