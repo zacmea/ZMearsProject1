@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Extravaganza</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Welcome to Zachary's Trivia Extravaganza!</h1>
+    <h3>Questions correct: <span id="questionsCorrectText"></span></h3>
+    <h3>Lives remaining: <span id="livesRemainingText"></span></h3>
+
+    <!-- Could put a message box here or below ? to share trivia tidbit, wrong/right, hints, etc instead of modal/other pop-up-->
+
+    
+    <div id="feedbackBox"></div>
+
+    <div class="questionBox">
+        <div id="questionText">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, corporis ex totam excepturi veniam officia odit, exercitationem placeat facilis architecto fugiat ratione nihil eos et earum doloribus modi vitae incidunt.
+        </div>
+    
+        <button class="answerButton" id="aButton">A <span id="aOption"></span></button>
+        <button class="answerButton" id="bButton">B <span id="bOption"></span></button>
+        <button class="answerButton" id="cButton">C <span id="cOption"></span></button>
+        <button class="answerButton" id="dButton">D <span id="dOption"></span></button>
+    </div>
+    <div id="tidbitBox">
+    </div>
+    <div id="lowerNav">
+        <button id="next">Next</button>
+        <button id="exit">Exit Game</button>
+        <button id="restart">Restart Game</button>
+
+    </div>
+
+    
+</body>
+</html>

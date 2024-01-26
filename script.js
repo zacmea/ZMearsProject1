@@ -99,7 +99,7 @@ let nextButton = document.getElementById("next");
 let exitButton = document.getElementById("exit");
 let restartButton = document.getElementById("restart");
 
-//-----GAMEPLAY functions-----
+//-----GAMEPLAY FUNCTIONS-----
 function playGame() {
     // while (gameRunning) {
     function updateFields() {
@@ -132,13 +132,19 @@ function playGame() {
     }
     updateFields();
 
-    aButton.addEventListener("click", selectAndCompare);
-    bButton.addEventListener("click", selectAndCompare);
-    cButton.addEventListener("click", selectAndCompare);
-    dButton.addEventListener("click", selectAndCompare);
+//-----Answer button event listeners-----
+    answerButtonsAll = document.getElementsByClassName("answerButton");
+    for (let button of answerButtonsAll) {
+        button.addEventListener("mousedown", function(event) {
+            event.currentTarget.classList.add("clicked")});
+        button.addEventListener("mouseup", function(event) {
+            event.currentTarget.classList.remove("clicked")});
+        button.addEventListener("click", selectAndCompare)
+    }
     exitButton.addEventListener("click", exitScreen);
     restartButton.addEventListener("click", restartGame);
 
+    
     function selectAndCompare(event) {
         userSelection = event.currentTarget;
         event.currentTarget.style.backgroundColor = "blue";
