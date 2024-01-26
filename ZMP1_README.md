@@ -39,7 +39,7 @@ THIS PAGE WILL CONTINUE TO BE UPDATED AS THE PROJECT PROGRESSES.
   <p align="center">
         This is me building my first project for GA's coding bootcamp.  It will be a clickable trivia game.  The build-flow & proposal information can be found at the bottom of this readme.
     <br />
-    <a href="https://zacmea.github.io/ZMearsProject1/">link to live project</a>
+    <a href="https://zacmea.github.io/ZMearsProject1/" target="_blank" rel="noopener noreferrer">link to live project</a>
   </p>
 </div>
 
