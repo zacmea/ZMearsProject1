@@ -37,7 +37,7 @@ THIS PAGE WILL CONTINUE TO BE UPDATED AS THE PROJECT PROGRESSES.
 <h3 align="center">Terrific Trivia</h3>
 
   <p align="center">
-        This is me building my first project for GA's coding bootcamp.  It will be a clickable trivia game.
+        This is me building my first project for GA's coding bootcamp.  It will be a clickable trivia game.  The build-flow & proposal information can be found at the bottom of this readme.
     <br />
   </p>
 </div>
@@ -187,6 +187,21 @@ Zachary Kyler Mears:
 * []()
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+<!--Building process-->
+## Build-flow and proposal
+# Wire Frames
+
+<img width="546" alt="Screenshot 2024-01-12 at 2 40 57 PM" src="https://media.git.generalassemb.ly/user/51556/files/d61f2d92-7c70-43a2-9b37-b34731ab99f6">
+<img width="554" alt="Screenshot 2024-01-12 at 2 32 58 PM" src="https://media.git.generalassemb.ly/user/51556/files/08f7bee5-f2b2-416a-9e6d-ede501a8d197">
+<img width="551" alt="Screenshot 2024-01-12 at 2 33 07 PM" src="https://media.git.generalassemb.ly/user/51556/files/ef5f2dcb-6558-40ba-8b96-cbe365087b5c">
+<img width="544" alt="Screenshot 2024-01-12 at 2 33 13 PM" src="https://media.git.generalassemb.ly/user/51556/files/8ec22fe7-5b25-4cc8-be3d-cd23577d0d22">
+<img width="567" alt="Screenshot 2024-01-12 at 2 33 23 PM" src="https://media.git.generalassemb.ly/user/51556/files/feee35eb-4daa-4ac7-b801-20204ff8b4e1">
+<img width="552" alt="Screenshot 2024-01-12 at 5 55 27 PM" src="https://media.git.generalassemb.ly/user/51556/files/7ee9b273-9882-413b-a900-c4e48fbe632c">
+<img width="563" alt="Screenshot 2024-01-12 at 5 55 35 PM" src="https://media.git.generalassemb.ly/user/51556/files/99548973-bc30-4ed7-8915-41869c8a110d">
+<img width="566" alt="Screenshot 2024-01-12 at 5 55 41 PM" src="https://media.git.generalassemb.ly/user/51556/files/c1e6c80d-e13c-4909-a542-44874ed2d74e">
+<img width="559" alt="Screenshot 2024-01-12 at 5 55 47 PM" src="https://media.git.generalassemb.ly/user/51556/files/acb22c17-efc8-43b8-9128-5dcc715cea1c">
+<img width="563" alt="Screenshot 2024-01-12 at 5 55 54 PM" src="https://media.git.generalassemb.ly/user/51556/files/e5791455-9624-4913-9f9c-62217efc89c7">
 
 
 
