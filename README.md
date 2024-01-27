@@ -118,6 +118,8 @@ Examples will be added as the project is further developed.
 ## Roadblocks and Issues
 * []()I want to add sound to the win/lose screen
 * []()It was challenging to get the event listeners to attach properly to the whole button and not just to one of the child elements (thanks, Billie!)
+* []()I want to add a "previous/back" button to support navigation thru the questions
+* []()I want to be able to randomize the order of the questions
 <!--See the [open issues](https://github.com/zacmea/ZMearsProject1/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p> -->
