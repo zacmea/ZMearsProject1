@@ -111,15 +111,15 @@ const question10 = new TriviaQuestion(
     "Dolly Parton has stated that she 'just freaked out' and had to pull over to the side of the road when she first heard Houston's take on the song due to the 'most overwhelming feeling' she got from listening to it."
 );
 questionBank.push(question10);
-const question11 = new TriviaQuestion(
-    "Which of these languages native to the Iberean Penninsula is unrelated to the others?",
-    "Catalán",
-    "Gallego",
-    "Spanish",
-    "Basque/Eúskara",
-    "Basque/Eúskara",
-    "The Basque language is unrelated to any Iberean languages.  Indeed, linguists are unsure if Eúskara is related to *any* extant language."
-);
+// const question11 = new TriviaQuestion(
+//     "Which of these languages native to the Iberean Penninsula is unrelated to the others?",
+//     "Catalán",
+//     "Gallego",
+//     "Spanish",
+//     "Basque/Eúskara",
+//     "Basque/Eúskara",
+//     "The Basque language is unrelated to any Iberean languages.  Indeed, linguists are unsure if Eúskara is related to *any* extant language."
+// );
 
 //-----Global variable declarations:-----
 let currentQuestionCounter = 0;
