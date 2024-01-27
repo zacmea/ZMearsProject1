@@ -1,3 +1,9 @@
+body {
+    background-image: url("stucco.jpg");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+}
+
 h1, p{
     display: flex;
     justify-content: center;
@@ -37,23 +43,23 @@ button {
     display: none; */
 /* } */
 
-/* #lowerNav>button{
+#lowerNav>button{
     font-size: large;
     margin: 0 5px;
     padding: 5px 10px;
     background-color: rgb(164, 251, 251);
     font-weight: 900;
-} */
+} 
 
-/* #lowerNav{
+#lowerNav{
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     position: relative;
-    /* display: inline-flex; */
-    /* margin: 0 auto;
+    /* display: inline-flex;  */
+    margin: 0 auto;
     width: 50%;
-    justify-content: space-evenly; */
- /* } */
+    justify-content: space-evenly;
+ } 
 
 #feedbackBox{
     display: flex;

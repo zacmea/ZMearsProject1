@@ -1,13 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link rel="stylesheet" href="landingstyles.css">
 </head>
+
 <body>
-    <h1>Welcome to Zachary's homepage.</h1>    
-    <p>This page is still a work in progress.  It will be updated more as my porfolio is built out.</p>
+    <h1>Welcome to Zachary's homepage.</h1>
+    <br>
+    <p>This page is still a work in progress. It will be updated more as my porfolio is built out.</p>
+    <p>For now, you can check out my&nbsp<a href="http://www.linkedin.com/in/ZacharyKyler" target="_blank"
+            rel="noopener noreferrer">LinkedIn</a>&nbspor&nbsp<a href="http://www.github.com/zacmea" target="_blank"
+            rel="noopener noreferrer">github</a>.</p>
+    <br>
+    <div id="lowerNav">
+        <button id="landingButton">Back to landing page</button>
+    </div>
+    <script>
+        let backToLandingButton = document.getElementById("landingButton");
+        animateButton(backToLandingButton);
+        function animateButton(passedButton) {
+                passedButton.addEventListener("mousedown", function (event) {
+                    event.currentTarget.classList.add("clicked");
+                });
+                passedButton.addEventListener("mouseup", function (event) {
+                    event.currentTarget.classList.remove("clicked");
+                });
+            }
+        backToLandingButton.addEventListener("click", function() {
+            window.location.href = 'index.html';
+        })
+    </script>
 </body>
+
 </html>

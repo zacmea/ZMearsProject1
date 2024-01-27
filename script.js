@@ -98,6 +98,15 @@ let dButton = document.getElementById("dButton");
 let nextButton = document.getElementById("next");
 let exitButton = document.getElementById("exit");
 let restartButton = document.getElementById("restart");
+//-----Button animation function:-----
+function animateButton(passedButton) {
+    passedButton.addEventListener("mousedown", function (event) {
+        event.currentTarget.classList.add("clicked");
+    });
+    passedButton.addEventListener("mouseup", function (event) {
+        event.currentTarget.classList.remove("clicked");
+    });
+}
 
 //-----GAMEPLAY FUNCTIONS-----
 function playGame() {
@@ -115,6 +124,7 @@ function playGame() {
         bBox.innerText = questionBank[i].ansB;
         cBox.innerText = questionBank[i].ansC;
         dBox.innerText = questionBank[i].ansD;
+        exitButton.innerText = "Exit Game";
         nextButton.classList.remove("inactive");
 
         answerButtonsAll = document.getElementsByClassName("answerButton");
@@ -132,19 +142,23 @@ function playGame() {
     }
     updateFields();
 
-//-----Answer button event listeners-----
+    //-----Answer button event listeners-----
     answerButtonsAll = document.getElementsByClassName("answerButton");
     for (let button of answerButtonsAll) {
-        button.addEventListener("mousedown", function(event) {
-            event.currentTarget.classList.add("clicked")});
-        button.addEventListener("mouseup", function(event) {
-            event.currentTarget.classList.remove("clicked")});
-        button.addEventListener("click", selectAndCompare)
+        animateButton(button)
+        // button.addEventListener("mousedown", function (event) {
+        //     event.currentTarget.classList.add("clicked");
+        // });
+        // button.addEventListener("mouseup", function (event) {
+        //     event.currentTarget.classList.remove("clicked");
+        // });
+        button.addEventListener("click", selectAndCompare);
     }
     exitButton.addEventListener("click", exitScreen);
+    animateButton(exitButton);
     restartButton.addEventListener("click", restartGame);
+    animateButton(restartButton);
 
-    
     function selectAndCompare(event) {
         userSelection = event.currentTarget;
         event.currentTarget.style.backgroundColor = "blue";
@@ -166,9 +180,10 @@ function playGame() {
         tbBox.style.border = "thick dotted orange";
         if (userSelection.children[0].innerText == questionBank[i].correctAns) {
             feedbackBox.innerText = "¡Respuesta correcta!";
-            
+
             feedbackBox.style.backgroundColor = "rgb(34,206,131)";
             correctCounter++;
+            animateButton(nextButton);
             nextButton.addEventListener("click", advanceQuestion);
         } else {
             feedbackBox.innerText = "Respuesta equivocada :-(";
@@ -176,6 +191,7 @@ function playGame() {
             // tbBox.innerText = questionBank[i].tidbit;
             // tbBox.style.border = "thick dotted orange";
             livesRemaining--;
+            animateButton(nextButton);
             nextButton.addEventListener("click", advanceQuestion);
         }
     }
@@ -194,25 +210,22 @@ function playGame() {
     }
 
     function exitScreen() {
-        feedbackBox.innerText = "¡Gracias por jugar! Thanks for playing!";
+        feedbackBox.innerHTML = "<em>¡Gracias por jugar! Thanks for playing!</em>";
+        feedbackBox.style.backgroundColor = "transparent";
         qBox.innerText = "During your time with us, you achieved the following:";
         tbBox.innerHTML = `${correctCounter} questions correct, with <br>${livesRemaining} lives remaining`;
         tbBox.style.display = "flex";
         tbBox.style.justifyContent = "center";
         nextButton.classList.add("inactive");
-
+        exitButton.innerText = "Back to landing page";
+        exitButton.addEventListener("click", function(){
+            window.location.href = 'index.html';
+        })
         for (let button of answerButtonsAll) {
             let list = button.classList;
             list.add("inactive");
         }
     }
-    // function userSelects(event) {
-    //     // userSelection = event.currentTarget;
-    //     console.log(userSelection);
-    //     // gameRunning = userSelection;
-    //     console.log(event.currentTarget);
-    //     compareAnswer(userSelection);
-    // }
 }
 
 playGame();

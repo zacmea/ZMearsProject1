@@ -13,9 +13,29 @@
     <p id="feedbackBox">This is my landing page. Would you like to go to my homepage or play my trivia game?</p>
     <br>
     <div id="tidbitBox">
-        <button class="answerButton"><a href:"home.html">Homepage</a></button>
-        <button class="answerButton"><a href:"trivia.html">Play Trivia</a></button>
+        <button class="answerButton" id="homepage" onclick="openHomepage()">Homepage</button>
+        <button class="answerButton" id="triviaGame" onclick="openTriviaGame()">Trivia Game</button>
     </div>
+    <script>
+        answerButtonsAll = document.getElementsByClassName("answerButton");
+        for (let button of answerButtonsAll) {
+            animateButton(button)
+        }
+        function openHomepage() {
+            window.location.href = 'home.html';
+        }
+        function openTriviaGame() {
+            window.location.href = 'trivia.html';
+        }
+        function animateButton(passedButton) {
+            passedButton.addEventListener("mousedown", function (event) {
+                event.currentTarget.classList.add("clicked");
+            });
+            passedButton.addEventListener("mouseup", function (event) {
+                event.currentTarget.classList.remove("clicked");
+            });
+        }
+    </script>
 </body>
 
 </html>
