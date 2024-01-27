@@ -37,7 +37,8 @@ THIS PAGE WILL CONTINUE TO BE UPDATED AS THE PROJECT PROGRESSES.
 <h3 align="center">Terrific Trivia</h3>
 
   <p align="center">
-        This is me building my first project for GA's coding bootcamp.  It will be a clickable trivia game.  The build-flow & proposal information can be found at the bottom of this readme.
+        This is my first project for GA's coding bootcamp.  It is a clickable trivia game.  The build-flow & proposal information can be found at the bottom of this readme.
+    <img width="1061" alt="Screenshot 2024-01-27 at 11 55 11 AM" src="https://github.com/zacmea/ZMearsProject1/assets/152098774/ed5f87c8-4b65-4dac-8609-7eece1c0519b">
     <br />
     <a href="https://zacmea.github.io/ZMearsProject1/" target="_blank">link to live project</a>
   </p>
