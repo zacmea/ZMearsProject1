@@ -188,30 +188,30 @@ Zachary Kyler Mears:
 <img width="563" alt="Screenshot 2024-01-12 at 5 55 54 PM" src="https://media.git.generalassemb.ly/user/51556/files/e5791455-9624-4913-9f9c-62217efc89c7">
 
 ### User Stories
--- As a trivia fan, I want to test my knowledge of trivia to give myself some mental stimulation.
--- As a lifelong learner, I want to use trivia questions as a jumping off point so that I can research further & learn new things.
--- As a competitive person, I want to use a trivia game to learn more trivia so that I can win at pub trivia.
--- As a trivia nerd, I want to play a diverse trivia game so that I can gain exposure to novel areas of information/trivia.
--- As a teacher or mentor, I want to be able to clearly identify the tools used & read the code written so that I can provide Zachary with targeted support.
+* []()As a trivia fan, I want to test my knowledge of trivia to give myself some mental stimulation. <br>
+* []()As a lifelong learner, I want to use trivia questions as a jumping off point so that I can research further & learn new things.<br>
+* []()As a competitive person, I want to use a trivia game to learn more trivia so that I can win at pub trivia.<br>
+* []()As a trivia nerd, I want to play a diverse trivia game so that I can gain exposure to novel areas of information/trivia.<br>
+* []()As a teacher or mentor, I want to be able to clearly identify the tools used & read the code written so that I can provide Zachary with targeted support.<br>
 
 ### MVP Goals (How your specific project will look & behave in order to accomplish MVP)
-####Landing page
--- landing page to welcome user, where they can either play the targeted game or go to my home page
+###Landing page
+* []()landing page to welcome user, where they can either play the targeted game or go to my home page<br>
 
-####Game:
--- trivia game with questions presented in a box (modal?) with clickable answer choices
--- game will log and display number of incorrect guesses (or "lives" remaining before game over)
--- trivia will be sourced from a wide range of topics
+###Game:
+* []()trivia game with questions presented in a box (modal?) with clickable answer choices<br>
+* []()game will log and display number of incorrect guesses (or "lives" remaining before game over)<br>
+* []()trivia will be sourced from a wide range of topics<br>
 
 ### Stretch Goals
--- nav bar w gradient background on left side to allow for use of page on multiple screen sizes
--- about me page w 1+ images
--- resume 
--- projects page that will expand
--- Make nav bar slide in and out on hover
--- make background translucent (without making other elements transparent, dangit!)
--- add sick stylings via css
--- add movement of <articles> or <divs> within non-game pages
+* []()av bar w gradient background on left side to allow for use of page on multiple screen sizes<br>
+* []()about me page w 1+ images<br>
+* []()resume on about me page<br>
+* []()projects page on about me page that will expand<br>
+* []()Make nav bar slide in and out on hover<br>
+* []()make background translucent (without making other elements transparent, dangit!)<br>
+* []()add sick stylings via css<br>
+* []()add movement of <articles> or <divs> within non-game pages
 
 
 
