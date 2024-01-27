@@ -71,6 +71,55 @@ const question6 = new TriviaQuestion(
     "Ankor Wat, originally constructed as a Hindu temple to Vishnu, was constructed during the 1100's in what is now Cambodia."
 );
 questionBank.push(question6);
+const question7 = new TriviaQuestion(
+    "The cheetah has been dubbed the fastest animal on land.  What animal bears the title of fastest of the skies?",
+    "bald eagle",
+    "common swift",
+    "peregrine falcon",
+    "saker falcon",
+    "peregrine falcon",
+    "The peregrine falcon has been clocked at speeds of 186MPH/300KPH during dives or swoops!"
+);
+questionBank.push(question7);
+const question8 = new TriviaQuestion(
+    "Hyperbolas, ellipses, parabolas, and circles are all 2-D sections of which 3-D geographic shape?",
+    "cone",
+    "sphere",
+    "Bucky ball",
+    "cylinder",
+    "cone",
+    "By taking flat slices through a cone shape you can create any of these 2-D shapes."
+);
+questionBank.push(question8);
+const question9 = new TriviaQuestion(
+    "Which of these languages native to the Iberean Penninsula is unrelated to the others?",
+    "Catalán",
+    "Gallego",
+    "Spanish",
+    "Basque/Eúskara",
+    "Basque/Eúskara",
+    "The Basque language is unrelated to any Iberean languages.  Indeed, linguists are unsure if Eúskara is related to *any* extant language."
+);
+questionBank.push(question9);
+const question10 = new TriviaQuestion(
+    "Who wrote the song 'I Will Always Love You' that Whitney Houston took to the top of the charts in 1992?",
+    "Dolly Parton",
+    "Whitney Houston",
+    "Max Martin",
+    "Gladys Knight",
+    "Dolly Parton",
+    "Dolly Parton has stated that she 'just freaked out' and had to pull over to the side of the road when she first heard Houston's take on the song due to the 'most overwhelming feeling' she got from listening to it."
+);
+questionBank.push(question10);
+const question11 = new TriviaQuestion(
+    "Which of these languages native to the Iberean Penninsula is unrelated to the others?",
+    "Catalán",
+    "Gallego",
+    "Spanish",
+    "Basque/Eúskara",
+    "Basque/Eúskara",
+    "The Basque language is unrelated to any Iberean languages.  Indeed, linguists are unsure if Eúskara is related to *any* extant language."
+);
 
 //-----Global variable declarations:-----
 let currentQuestionCounter = 0;
