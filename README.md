@@ -166,9 +166,9 @@ Zachary Kyler Mears:
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
-* []()
+* []()Thanks to GA instructors Andrew Deitrick, Justin White, and especially Billie Heidelberg for the time spent helping me debug & improve my code
+* []()Thanks to GA classmate Wick Hill for the moral support and sharing insight around using sounds in JS
+* []()Thanks to my partner Demi Tuck for the moral support when I didn't think I could accomplish such a (to me) big task
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
