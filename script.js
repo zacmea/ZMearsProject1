@@ -159,7 +159,8 @@ function animateButton(passedButton) {
 
 //-----GAMEPLAY FUNCTIONS-----
 function playGame() {
-    // while (gameRunning) {
+//-----gameplay functions included: updateFields, selectAndCompare, advanceQuestion, restartGame, exitScreen, 
+//-----button functions include: disableOtherButtons, animateButton
     function updateFields() {
         correctBox.innerText = correctCounter;
         livesBox.innerText = livesRemaining;
@@ -213,15 +214,12 @@ function playGame() {
         event.currentTarget.style.backgroundColor = "blue";
         event.currentTarget.style.color = "white";
         event.currentTarget.children[0].style.color = "white";
-
         disableOtherButtons(event.currentTarget);
         function disableOtherButtons(clickedButton) {
             answerButtonsAll = document.getElementsByClassName("answerButton");
             for (let button of answerButtonsAll) {
                 if (button !== clickedButton) {
                     button.disabled = true;
-                    // let list = button.classList;
-                    // list.add("inactive");
                 }
             }
         }
@@ -229,7 +227,6 @@ function playGame() {
         tbBox.style.border = "thick dotted orange";
         if (userSelection.children[0].innerText == questionBank[i].correctAns) {
             feedbackBox.innerText = "¡Respuesta correcta!";
-
             feedbackBox.style.backgroundColor = "rgb(34,206,131)";
             correctCounter++;
             animateButton(nextButton);
@@ -237,8 +234,6 @@ function playGame() {
         } else {
             feedbackBox.innerText = "Respuesta equivocada :-(";
             feedbackBox.style.backgroundColor = "rgb(234,84,36)";
-            // tbBox.innerText = questionBank[i].tidbit;
-            // tbBox.style.border = "thick dotted orange";
             livesRemaining--;
             animateButton(nextButton);
             nextButton.addEventListener("click", advanceQuestion);
