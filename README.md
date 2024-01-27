@@ -62,7 +62,7 @@ THIS PAGE WILL CONTINUE TO BE UPDATED AS THE PROJECT PROGRESSES.
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#roadblocks-and-issues">Roadblocks and Issues</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -115,13 +115,9 @@ Examples will be added as the project is further developed.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
   
-## Roadmap
-<!--
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature -->
-
+## Roadblocks and Issues
+* []()I want to add sound to the win/lose screen
+* []()It was challenging to get the event listeners to attach properly to the whole button and not just to one of the child elements (thanks, Billie!)
 <!--See the [open issues](https://github.com/zacmea/ZMearsProject1/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p> -->
