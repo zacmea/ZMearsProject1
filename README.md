@@ -116,10 +116,12 @@ Examples will be added as the project is further developed.
 <p align="right">(<a href="#top">back to top</a>)</p>
   
 ## Roadblocks and Issues
-* []()I want to add sound to the win/lose screen
+* []()I wanted to add sound to the win/lose screen.  Will add in future.
 * []()It was challenging to get the event listeners to attach properly to the whole button and not just to one of the child elements (thanks, Billie!)
-* []()I want to add a "previous/back" button to support navigation thru the questions
-* []()I want to be able to randomize the order of the questions
+* []()I wanted to add a "previous/back" button to support navigation thru the questions
+* []()I wanted to be able to randomize the order of the questions
+* []()I wanted to connect to an API to get the trivia questions instead of coding them in
+* []()Occassionally, the "exit game" button takes in 2 clicks and carries the user all the way back to the landing page
 <!--See the [open issues](https://github.com/zacmea/ZMearsProject1/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p> -->
