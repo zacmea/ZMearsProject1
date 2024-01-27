@@ -259,7 +259,11 @@ function playGame() {
     }
 
     function exitScreen() {
-        feedbackBox.innerHTML = "<em>¡Gracias por jugar! Thanks for playing!</em>";
+        if (correctCounter >= 5){
+        feedbackBox.innerHTML = "<em>You win! ¡Gracias por jugar! Thanks for playing!</em>";
+        }else {
+            feedbackBox.innerHTML = "<em>Sorry, you lose this time. Pero, ¡gracias por jugar! But thanks for playing!</em>"
+        }
         feedbackBox.style.backgroundColor = "transparent";
         qBox.innerText = "During your time with us, you achieved the following:";
         tbBox.innerHTML = `${correctCounter} questions correct, with <br>${livesRemaining} lives remaining`;
